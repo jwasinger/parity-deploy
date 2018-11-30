@@ -1,0 +1,26 @@
+[parity]
+chain = "/home/ewasm/projects/parity-deploy-old/deployment/chain/parity.goerli.genesis.json"
+
+[account]
+password = ["/home/ewasm/projects/parity-deploy-old/deployment/1/password"]
+
+[network]
+reserved_peers = "/home/ewasm/projects/parity-deploy-old/deployment/chain/reserved_peers"
+
+[rpc]
+interface = "0.0.0.0"
+cors = ["all"]
+hosts = ["all"]
+apis = ["web3", "eth", "net", "parity", "traces", "rpc", "personal", "parity_accounts", "signer", "parity_set"]
+
+[mining]
+reseal_on_txs = "none"
+engine_signer = "0xad7a97c7d3670326607bb9fc33498d0730ed616b"
+
+[websockets]
+disable = false
+port = 8546
+interface = "all"
+origins = ["http://127.0.0.1:8180"]
+apis = ["web3", "eth", "net", "parity", "traces", "rpc", "secretstore"]
+hosts = ["all"]
